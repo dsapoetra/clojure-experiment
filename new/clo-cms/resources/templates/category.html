@@ -1,0 +1,14 @@
+{% extends "base-editor.html" %}
+{% block content %}
+
+<form method="POST" action="/submit-category">
+   {% csrf-field %}
+  Category : <input type="text" name="category"></br>
+    <input type="submit" value="Submit">
+</form>
+<h3> Existing category </h3>
+       {% for item in data %}
+     <p>{{item.nama}}<p>
+    {% endfor %}
+
+{% endblock %}

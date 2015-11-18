@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="jumbotron">
+    <h1>Welcome to datomicweb</h1>
+    <p>Time to start building your site!</p>
+    <p><a class="btn btn-primary btn-lg" href="http://luminusweb.net">Learn more &raquo;</a></p>
+  </div>
+
+  <div class="row">
+    <div class="span12">
+      <form action="/insert-act" enctype="multipart/form-data" method="POST">
+        {% csrf-field %}
+        Masukkan nama   : <input type="text" name="nama">
+        Masukkan email  : <input type="text" name="email">
+        Masukkan alamat : <input type="text" name="alamat">
+        Masukkan umur   : <input type="text" name="umur">
+      </form>
+
+      <form action="/search-act" enctype="multipart/form-data" method="POST">
+        {% csrf-field %}
+        Search (by name,email,umur)   : <input type="text" name="input">
+      </form>
+
+      <h3> Existing data </h3>
+      {% for item in data %}
+        Nama   :  <p>{{item.nama}}<p>
+        Email  :  <p>{{item.email}}<p>
+        Alamat :  <p>{{item.alamat}}<p>
+        Usia   :  <p>{{item.umur}}<p>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

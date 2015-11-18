@@ -1,0 +1,6 @@
+(defn tx-data
+  [email name]
+  [{:db/id (d/tempid :db.part/user) :user/email email
+                   :user/name name
+                   :user/roles [:user.roles/author :user.roles/editor]}])
+(start-http-server 3000)

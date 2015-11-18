@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+  <!-- Blog Post -->
+        {% safe %}
+    {% for item in dat %}
+
+                <!-- Title -->
+                <h1>{{item.title}}</h1>
+
+                <!-- Author -->
+                <p class="lead">
+                    by <a href="#">Start Bootstrap</a>
+                </p>
+
+                <hr>
+
+                <!-- Date/Time -->
+                <p><span class="glyphicon glyphicon-time"></span> Posted on August 24, 2013 at 9:00 PM</p>
+
+                <hr>
+
+                <!-- Post Content -->
+               {{item.body}}
+                 {% endfor %}
+
+                <hr>
+
+<div class="row">
+  <div class="col-md-12">
+{% for item in penulis %}
+<h2>{{item.nama}}</h2>
+      <img class="img-thumbnail" src="{{item.foto}}" style ="max-width:25%"/></br>
+
+      <p>{{item.bio}}</p>
+    {% endfor %}
+  </div>
+
+</div>
+
+
+                <!-- Blog Comments -->
+
+                <!-- Comments Form -->
+                <div class="well">
+                    <h4>Leave a Comment:</h4>
+                   <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'cms123';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                </div>
+
+                <hr>
+
+{% endsafe %}
+
+{% endblock %}

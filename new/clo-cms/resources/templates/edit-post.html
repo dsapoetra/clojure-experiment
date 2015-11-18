@@ -1,0 +1,51 @@
+{% extends "base-editor.html" %}
+{% block content %}
+
+<script type="text/javascript" src="/js/tinymce/tinymce.min.js"></script>
+<script type="text/javascript">
+tinymce.init({
+    selector: "textarea",
+    theme: "modern",
+    plugins: [
+        "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+        "searchreplace wordcount visualblocks visualchars code fullscreen",
+        "insertdatetime media nonbreaking save table contextmenu directionality",
+        "emoticons template paste textcolor colorpicker textpattern imagetools"
+    ],
+    toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+    toolbar2: "print preview media | forecolor backcolor emoticons",
+    image_advtab: true,
+    templates: [
+        {title: 'Test template 1', content: 'Test 1'},
+        {title: 'Test template 2', content: 'Test 2'}
+    ]
+});
+</script>
+
+{% for item in dat%}
+<form method="POST" action="/update/{{item.idpost}}">
+   {% csrf-field %}
+   <input type="text" name="title" placeholder="{{item.title}}">
+    <textarea name="content" style="width:100%" placeholder="{{item.body}}">{{item.body}}</textarea>
+
+
+    {% endfor %}
+
+     <select name="idcategory">
+       {% for item in cat%}
+     <option value="{{item.idcategory}}">{{item.namacategory}}</option>
+     {% endfor %}
+      </select>
+
+        <select name="idwriter">
+       {% for item in data2 %}
+     <option value="{{item.idwriter}}">{{item.nama}}</option>
+    {% endfor %}
+      </select>
+
+
+
+    <input type="submit" value="Submit">
+</form>
+
+{% endblock %}

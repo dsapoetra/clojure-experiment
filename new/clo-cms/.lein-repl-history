@@ -1,0 +1,11 @@
+(start-http-server 3000)
+(ns cms.routes.home)
+(session/put! :username "a")
+(binding [sesh/*noir-session* (atom {:somekey "somevalue"})]
+(binding [session/*noir-session* (atom {:somekey "somevalue"})]
+  (session/put! :user "borkdude"))
+(ns cms.core)
+(start-http-server 3000)
+(start-http-server 3001)
+(start-http-server 3000)
+(stop-http-server)

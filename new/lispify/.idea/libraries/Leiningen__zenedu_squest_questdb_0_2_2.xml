@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: zenedu.squest/questdb:0.2.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/zenedu/squest/questdb/0.2.2/questdb-0.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

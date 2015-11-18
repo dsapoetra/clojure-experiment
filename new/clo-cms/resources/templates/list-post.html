@@ -1,0 +1,24 @@
+{% extends "base-editor.html" %}
+{% block content %}
+{% safe %}
+
+{% for item in data %}
+                <!-- First Blog Post -->
+                <h2>
+                    <a href="#">{{item.title}}</a>
+                </h2>
+                <p class="lead">
+                    by <a href="index.php">{{item.nama}}</a>
+                </p>
+                <p><span class="glyphicon glyphicon-time"></span> Posted on {{item.date}}</p>
+                <hr>
+
+                <p>{{item.body}}</p>
+                <a class="btn btn-primary" href="/edit/post/{{item.idpost}}">Edit <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="/delete-post/{{item.idpost}}">Delete <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+                <hr>
+ {% endfor %}
+
+ {% endsafe %}
+{% endblock %}

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: reagent:0.4.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/reagent/reagent/0.4.2/reagent-0.4.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
