@@ -1,0 +1,149 @@
+00:00:10.104 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1090.0, :event :metrics, :pid 2814, :tid 38}
+00:01:10.109 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1090.0, :event :metrics, :pid 2814, :tid 38}
+00:02:10.115 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1090.0, :event :metrics, :pid 2814, :tid 38}
+00:03:10.122 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1090.0, :event :metrics, :pid 2814, :tid 38}
+00:04:10.128 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1090.0, :event :metrics, :pid 2814, :tid 38}
+00:05:10.135 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1090.0, :event :metrics, :pid 2814, :tid 38}
+00:06:10.137 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1090.0, :event :metrics, :pid 2814, :tid 38}
+00:07:10.143 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1090.0, :event :metrics, :pid 2814, :tid 38}
+00:08:10.149 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1090.0, :event :metrics, :pid 2814, :tid 38}
+00:09:10.151 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1090.0, :event :metrics, :pid 2814, :tid 38}
+00:10:10.157 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1090.0, :event :metrics, :pid 2814, :tid 38}
+00:11:10.161 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1090.0, :event :metrics, :pid 2814, :tid 38}
+00:12:10.167 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1090.0, :event :metrics, :pid 2814, :tid 38}
+03:12:22.168 [Thread-4 (HornetQ-client-global-threads-1773334659)] INFO  datomic.peer - {:event :peer/transactor-connection-failed, :pid 2814, :tid 87}
+org.hornetq.api.core.HornetQNotConnectedException: HQ119006: Channel disconnected
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.connectionDestroyed(ClientSessionFactoryImpl.java:425) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at org.hornetq.core.remoting.impl.netty.NettyConnector$Listener$1.run(NettyConnector.java:911) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at org.hornetq.utils.OrderedExecutorFactory$OrderedExecutor$1.run(OrderedExecutorFactory.java:105) [hornetq-core-client-2.3.17.Final.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_40]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_40]
+03:12:22.178 [clojure-agent-send-off-pool-11] INFO  datomic.peer - {:event :peer/connect-transactor, :host "localhost", :alt-host nil, :port 4334, :version "0.9.5327", :pid 2814, :tid 89}
+03:12:22.187 [clojure-agent-send-off-pool-11] INFO  datomic.common - {:event :common/retry, :backoff 1000, :attempts 1, :max-retries 9223372036854775807, :pid 2814, :tid 89}
+clojure.lang.ExceptionInfo: Error communicating with HOST localhost on PORT 4334
+	at clojure.core$ex_info.invoke(core.clj:4593) ~[clojure-1.7.0.jar:na]
+	at datomic.connector$endpoint_error.invoke(connector.clj:52) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.connector.TransactorHornetConnector$fn__8522.invoke(connector.clj:238) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.connector.TransactorHornetConnector.admin_request_STAR_(connector.clj:226) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.peer.Connection$fn__8822.invoke(peer.clj:238) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.peer.Connection.create_connection_state(peer.clj:222) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.peer$create_connection$reconnect_fn__8883.invoke(peer.clj:488) ~[datomic-pro-0.9.5327.jar:na]
+	at clojure.core$partial$fn__4527.invoke(core.clj:2492) ~[clojure-1.7.0.jar:na]
+	at datomic.common$retry_fn$fn__253.invoke(common.clj:461) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.common$retry_fn.doInvoke(common.clj:461) ~[datomic-pro-0.9.5327.jar:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:713) [clojure-1.7.0.jar:na]
+	at datomic.peer$create_connection$fn__8885.invoke(peer.clj:492) [datomic-pro-0.9.5327.jar:na]
+	at datomic.reconnector2.Reconnector$fn__8236.invoke(reconnector2.clj:57) [datomic-pro-0.9.5327.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4444.invoke(core.clj:1916) [clojure-1.7.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.7.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_40]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_40]
+Caused by: org.hornetq.api.core.HornetQInternalErrorException: HQ119001: Failed to create session
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSessionInternal(ClientSessionFactoryImpl.java:962) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSessionInternal(ClientSessionFactoryImpl.java:787) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSession(ClientSessionFactoryImpl.java:324) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at datomic.hornet.SessionFactoryBundle.start_session_STAR_(hornet.clj:193) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.hornet$start_session.doInvoke(hornet.clj:165) ~[datomic-pro-0.9.5327.jar:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:464) [clojure-1.7.0.jar:na]
+	at datomic.connector.TransactorHornetConnector$fn__8522.invoke(connector.clj:228) ~[datomic-pro-0.9.5327.jar:na]
+	... 16 common frames omitted
+Caused by: java.lang.IllegalStateException: Connection is null
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSessionInternal(ClientSessionFactoryImpl.java:836) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	... 22 common frames omitted
+03:12:22.188 [clojure-agent-send-off-pool-11] WARN  datomic.common - ... caused by ...
+org.hornetq.api.core.HornetQInternalErrorException: HQ119001: Failed to create session
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSessionInternal(ClientSessionFactoryImpl.java:962) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSessionInternal(ClientSessionFactoryImpl.java:787) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSession(ClientSessionFactoryImpl.java:324) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at datomic.hornet.SessionFactoryBundle.start_session_STAR_(hornet.clj:193) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.hornet$start_session.doInvoke(hornet.clj:165) ~[datomic-pro-0.9.5327.jar:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:464) [clojure-1.7.0.jar:na]
+	at datomic.connector.TransactorHornetConnector$fn__8522.invoke(connector.clj:228) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.connector.TransactorHornetConnector.admin_request_STAR_(connector.clj:226) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.peer.Connection$fn__8822.invoke(peer.clj:238) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.peer.Connection.create_connection_state(peer.clj:222) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.peer$create_connection$reconnect_fn__8883.invoke(peer.clj:488) ~[datomic-pro-0.9.5327.jar:na]
+	at clojure.core$partial$fn__4527.invoke(core.clj:2492) ~[clojure-1.7.0.jar:na]
+	at datomic.common$retry_fn$fn__253.invoke(common.clj:461) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.common$retry_fn.doInvoke(common.clj:461) ~[datomic-pro-0.9.5327.jar:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:713) [clojure-1.7.0.jar:na]
+	at datomic.peer$create_connection$fn__8885.invoke(peer.clj:492) [datomic-pro-0.9.5327.jar:na]
+	at datomic.reconnector2.Reconnector$fn__8236.invoke(reconnector2.clj:57) [datomic-pro-0.9.5327.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4444.invoke(core.clj:1916) [clojure-1.7.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.7.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_40]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_40]
+Caused by: java.lang.IllegalStateException: Connection is null
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSessionInternal(ClientSessionFactoryImpl.java:836) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	... 22 common frames omitted
+03:12:22.189 [clojure-agent-send-off-pool-11] WARN  datomic.common - ... caused by ...
+java.lang.IllegalStateException: Connection is null
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSessionInternal(ClientSessionFactoryImpl.java:836) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSessionInternal(ClientSessionFactoryImpl.java:787) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSession(ClientSessionFactoryImpl.java:324) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at datomic.hornet.SessionFactoryBundle.start_session_STAR_(hornet.clj:193) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.hornet$start_session.doInvoke(hornet.clj:165) ~[datomic-pro-0.9.5327.jar:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:464) [clojure-1.7.0.jar:na]
+	at datomic.connector.TransactorHornetConnector$fn__8522.invoke(connector.clj:228) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.connector.TransactorHornetConnector.admin_request_STAR_(connector.clj:226) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.peer.Connection$fn__8822.invoke(peer.clj:238) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.peer.Connection.create_connection_state(peer.clj:222) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.peer$create_connection$reconnect_fn__8883.invoke(peer.clj:488) ~[datomic-pro-0.9.5327.jar:na]
+	at clojure.core$partial$fn__4527.invoke(core.clj:2492) ~[clojure-1.7.0.jar:na]
+	at datomic.common$retry_fn$fn__253.invoke(common.clj:461) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.common$retry_fn.doInvoke(common.clj:461) ~[datomic-pro-0.9.5327.jar:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:713) [clojure-1.7.0.jar:na]
+	at datomic.peer$create_connection$fn__8885.invoke(peer.clj:492) [datomic-pro-0.9.5327.jar:na]
+	at datomic.reconnector2.Reconnector$fn__8236.invoke(reconnector2.clj:57) [datomic-pro-0.9.5327.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4444.invoke(core.clj:1916) [clojure-1.7.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.7.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_40]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_40]
+03:12:23.198 [clojure-agent-send-off-pool-11] INFO  datomic.common - {:event :common/retry, :backoff 1000, :attempts 2, :max-retries 9223372036854775807, :result {:old-endpoint {:host "localhost", :port 4334, :timestamp 1449162739085}}, :pid 2814, :tid 89}
+07:24:43.108 [clojure-agent-send-off-pool-11] INFO  datomic.peer - {:event :peer/connect-transactor, :host "localhost", :alt-host nil, :port 4334, :version "0.9.5327", :pid 2814, :tid 89}
+07:24:43.994 [clojure-agent-send-off-pool-9] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :phase :begin, :pid 2814, :tid 59}
+07:24:44.009 [clojure-agent-send-off-pool-9] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :msec 11.5, :phase :end, :pid 2814, :tid 59}
+07:24:44.260 [clojure-agent-send-off-pool-11] INFO  datomic.log - {:event :log/catchup-fulltext, :phase :begin, :pid 2814, :tid 89}
+07:24:44.268 [clojure-agent-send-off-pool-11] INFO  datomic.log - {:event :log/catchup-fulltext, :msec 6.02, :phase :end, :pid 2814, :tid 89}
+07:24:44.270 [clojure-agent-send-off-pool-11] INFO  datomic.log - {:event :log/catchup, :bytes 0, :tail-t 1001, :index-t 1001, :msec 45, :pid 2814, :tid 89}
+07:24:44.296 [clojure-agent-send-off-pool-9] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :phase :begin, :pid 2814, :tid 59}
+07:24:44.300 [clojure-agent-send-off-pool-9] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :msec 4.28, :phase :end, :pid 2814, :tid 59}
+07:24:45.371 [clojure-agent-send-off-pool-11] INFO  datomic.log - {:event :log/catchup-fulltext, :phase :begin, :pid 2814, :tid 89}
+07:24:45.371 [clojure-agent-send-off-pool-11] INFO  datomic.log - {:event :log/catchup-fulltext, :msec 0.0731, :phase :end, :pid 2814, :tid 89}
+07:24:45.371 [clojure-agent-send-off-pool-11] INFO  datomic.log - {:event :log/catchup, :bytes 0, :tail-t 1001, :index-t 1001, :msec 1, :pid 2814, :tid 89}
+07:25:13.200 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:tid 38, :AvailableMB 1620.0, :pid 2814, :event :metrics, :ObjectCache {:lo 1, :hi 1, :sum 50, :count 50}, :LogIngestMsec {:lo 1, :hi 45, :sum 46, :count 2}, :MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :DbAddFulltextMsec {:lo 0, :hi 3, :sum 3, :count 2}, :PodGetMsec {:lo 4, :hi 11, :sum 15, :count 2}, :LogIngestBytes {:lo 0, :hi 0, :sum 0, :count 2}}
+07:26:13.198 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:27:13.205 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:28:13.211 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:29:13.215 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:30:13.223 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:31:13.225 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:32:13.233 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:33:13.240 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:34:13.245 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:35:13.252 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:36:13.260 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:37:13.262 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:38:13.268 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:39:13.270 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:40:13.273 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:41:13.281 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:42:13.289 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:43:13.297 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:44:13.303 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:45:13.308 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:46:13.315 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:47:13.319 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:48:13.326 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:49:13.329 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:50:13.336 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:51:13.340 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:52:13.345 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}
+07:53:13.351 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1610.0, :event :metrics, :pid 2814, :tid 38}

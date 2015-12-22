@@ -1,0 +1,446 @@
+11:54:25.453 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @13183ms
+17:36:30.901 [nREPL-worker-1] INFO  org.eclipse.jetty.server.Server - jetty-9.3.1.v20150714
+17:36:31.111 [nREPL-worker-1] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@66485ab5{/,null,AVAILABLE}
+17:36:31.179 [nREPL-worker-1] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@67c95525{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+17:36:31.182 [nREPL-worker-1] INFO  org.eclipse.jetty.server.Server - Started @2827755ms
+17:36:43.718 [qtp390965664-45] INFO  io.pedestal.http - {:line 78, :msg "GET /"}
+17:36:43.894 [qtp390965664-46] INFO  io.pedestal.http - {:line 78, :msg "GET /favicon.ico"}
+17:36:43.942 [qtp390965664-47] INFO  io.pedestal.http - {:line 78, :msg "GET /favicon.ico"}
+17:36:59.355 [nREPL-worker-1] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@67c95525{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+17:36:59.360 [nREPL-worker-1] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@66485ab5{/,null,UNAVAILABLE}
+18:42:57.012 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @13737ms
+18:43:15.243 [nREPL-worker-0] INFO  org.eclipse.jetty.server.Server - jetty-9.3.1.v20150714
+18:43:15.286 [nREPL-worker-0] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5ab5df9b{/,null,AVAILABLE}
+18:43:15.316 [nREPL-worker-0] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@49345ce0{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+18:43:15.316 [nREPL-worker-0] INFO  org.eclipse.jetty.server.Server - Started @32047ms
+18:43:22.183 [qtp767866250-24] INFO  io.pedestal.http - {:line 78, :msg "GET /"}
+18:43:23.831 [qtp767866250-24] INFO  datomic.process-monitor - {:event :metrics/initializing, :metricsCallback clojure.core/identity, :phase :begin, :pid 1955, :tid 24}
+18:43:23.834 [qtp767866250-24] INFO  datomic.process-monitor - {:event :metrics/initializing, :metricsCallback clojure.core/identity, :msec 1.11, :phase :end, :pid 1955, :tid 24}
+18:43:23.835 [qtp767866250-24] INFO  datomic.process-monitor - {:metrics/started clojure.core/identity, :pid 1955, :tid 24}
+18:43:23.838 [clojure-agent-send-off-pool-2] INFO  datomic.process-monitor - {:AvailableMB 1410.0, :event :metrics, :pid 1955, :tid 13}
+18:43:23.842 [clojure-agent-send-off-pool-2] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :phase :begin, :pid 1955, :tid 13}
+18:43:23.856 [clojure-agent-send-off-pool-2] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :msec 14.0, :phase :end, :pid 1955, :tid 13}
+18:43:23.860 [qtp767866250-24] INFO  datomic.domain - {:event :cache/create, :cache-bytes 954466304, :pid 1955, :tid 24}
+18:43:23.871 [qtp767866250-24] INFO  datomic.peer - {:event :peer/connect-transactor, :host "localhost", :alt-host nil, :port 4334, :version "0.9.5327", :pid 1955, :tid 24}
+18:43:23.968 [clojure-agent-send-off-pool-2] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :phase :begin, :pid 1955, :tid 13}
+18:43:23.971 [clojure-agent-send-off-pool-2] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :msec 2.06, :phase :end, :pid 1955, :tid 13}
+18:43:24.172 [qtp767866250-24] INFO  datomic.log - {:event :log/catchup-fulltext, :phase :begin, :pid 1955, :tid 24}
+18:43:24.183 [qtp767866250-24] INFO  datomic.log - {:event :log/catchup-fulltext, :msec 10.2, :phase :end, :pid 1955, :tid 24}
+18:43:24.183 [qtp767866250-24] INFO  datomic.log - {:event :log/catchup, :bytes 0, :tail-t 63, :index-t 63, :msec 12, :pid 1955, :tid 24}
+18:43:24.206 [clojure-agent-send-off-pool-1] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :phase :begin, :pid 1955, :tid 12}
+18:43:24.209 [clojure-agent-send-off-pool-1] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :msec 2.4, :phase :end, :pid 1955, :tid 12}
+18:43:24.221 [qtp767866250-24] INFO  datomic.log - {:event :log/catchup-fulltext, :phase :begin, :pid 1955, :tid 24}
+18:43:24.222 [qtp767866250-24] INFO  datomic.log - {:event :log/catchup-fulltext, :msec 0.151, :phase :end, :pid 1955, :tid 24}
+18:43:24.222 [qtp767866250-24] INFO  datomic.log - {:event :log/catchup, :bytes 0, :tail-t 63, :index-t 63, :msec 0, :pid 1955, :tid 24}
+18:43:24.240 [qtp767866250-24] INFO  datomic.peer - {:event :peer/cache-connection, :dbid "helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :pid 1955, :tid 24}
+18:43:24.246 [qtp767866250-24] INFO  datomic.peer - {:event :peer/transact, :uuid #uuid "56602adc-214f-4e52-80e1-1674faf874aa", :phase :start, :pid 1955, :tid 24}
+18:43:24.321 [clojure-agent-send-off-pool-2] INFO  datomic.peer - {:event :peer/transact, :uuid #uuid "56602adc-214f-4e52-80e1-1674faf874aa", :phase :end, :pid 1955, :tid 13}
+18:43:24.322 [clojure-agent-send-off-pool-2] INFO  datomic.peer - {:event :peer/notify-data, :msec 4, :id #uuid "56602adc-214f-4e52-80e1-1674faf874aa", :pid 1955, :tid 13}
+18:43:24.322 [qtp767866250-24] INFO  datomic.peer - {:event :peer/transact, :uuid #uuid "56602adc-e788-4858-9395-3c922e6640f0", :phase :start, :pid 1955, :tid 24}
+18:43:24.335 [clojure-agent-send-off-pool-2] INFO  datomic.peer - {:event :peer/transact, :uuid #uuid "56602adc-e788-4858-9395-3c922e6640f0", :phase :end, :pid 1955, :tid 13}
+18:43:24.335 [clojure-agent-send-off-pool-2] INFO  datomic.peer - {:event :peer/notify-data, :msec 1, :id #uuid "56602adc-e788-4858-9395-3c922e6640f0", :pid 1955, :tid 13}
+18:43:33.379 [qtp767866250-25] INFO  io.pedestal.http - {:line 78, :msg "GET /"}
+18:44:23.848 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:tid 38, :PeerAcceptNewMsec {:lo 0, :hi 3, :sum 3, :count 2}, :AvailableMB 1330.0, :StorageGetMsec {:lo 0, :hi 6, :sum 33, :count 22}, :pid 1955, :event :metrics, :ObjectCache {:lo 0, :hi 1, :sum 37, :count 64}, :LogIngestMsec {:lo 0, :hi 12, :sum 12, :count 2}, :MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :PeerFulltextBatch {:lo 1, :hi 1, :sum 2, :count 2}, :DbAddFulltextMsec {:lo 0, :hi 8, :sum 8, :count 2}, :PodGetMsec {:lo 2, :hi 14, :sum 18, :count 3}, :LogIngestBytes {:lo 0, :hi 0, :sum 0, :count 2}, :StorageGetBytes {:lo 31, :hi 2911, :sum 7902, :count 22}}
+18:45:23.848 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1330.0, :event :metrics, :pid 1955, :tid 38}
+18:46:23.856 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1330.0, :event :metrics, :pid 1955, :tid 38}
+18:47:23.859 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1330.0, :event :metrics, :pid 1955, :tid 38}
+18:48:23.863 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1320.0, :event :metrics, :pid 1955, :tid 38}
+18:49:23.869 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1320.0, :event :metrics, :pid 1955, :tid 38}
+18:50:23.882 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1320.0, :event :metrics, :pid 1955, :tid 38}
+18:51:23.891 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1320.0, :event :metrics, :pid 1955, :tid 38}
+18:52:23.898 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1320.0, :event :metrics, :pid 1955, :tid 38}
+18:53:23.905 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1320.0, :event :metrics, :pid 1955, :tid 38}
+18:54:23.909 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1320.0, :event :metrics, :pid 1955, :tid 38}
+18:55:23.911 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1320.0, :event :metrics, :pid 1955, :tid 38}
+18:56:23.915 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1320.0, :event :metrics, :pid 1955, :tid 38}
+18:57:23.920 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1320.0, :event :metrics, :pid 1955, :tid 38}
+18:58:23.923 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1320.0, :event :metrics, :pid 1955, :tid 38}
+18:59:23.930 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1320.0, :event :metrics, :pid 1955, :tid 38}
+19:00:23.938 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1320.0, :event :metrics, :pid 1955, :tid 38}
+19:01:23.946 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1320.0, :event :metrics, :pid 1955, :tid 38}
+19:02:23.949 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1320.0, :event :metrics, :pid 1955, :tid 38}
+19:03:23.956 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1320.0, :event :metrics, :pid 1955, :tid 38}
+19:04:23.958 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1320.0, :event :metrics, :pid 1955, :tid 38}
+19:05:23.962 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1320.0, :event :metrics, :pid 1955, :tid 38}
+19:06:23.969 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1320.0, :event :metrics, :pid 1955, :tid 38}
+19:30:14.323 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @11896ms
+19:30:22.235 [nREPL-worker-0] INFO  org.eclipse.jetty.server.Server - jetty-9.3.1.v20150714
+19:30:22.272 [nREPL-worker-0] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@565e1698{/,null,AVAILABLE}
+19:30:22.297 [nREPL-worker-0] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@14357aa4{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+19:30:22.298 [nREPL-worker-0] INFO  org.eclipse.jetty.server.Server - Started @19872ms
+19:30:55.555 [qtp441365394-24] INFO  io.pedestal.http - {:line 78, :msg "GET /hello-world"}
+19:40:15.097 [nREPL-worker-0] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@14357aa4{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+19:40:15.100 [nREPL-worker-0] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@565e1698{/,null,UNAVAILABLE}
+19:40:47.779 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @17830ms
+19:41:09.454 [nREPL-worker-0] INFO  org.eclipse.jetty.server.Server - jetty-9.3.1.v20150714
+19:41:09.495 [nREPL-worker-0] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@52a44adf{/,null,AVAILABLE}
+19:41:09.522 [nREPL-worker-0] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@57bcfac5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+19:41:09.523 [nREPL-worker-0] INFO  org.eclipse.jetty.server.Server - Started @39575ms
+19:41:25.655 [qtp613786449-28] INFO  io.pedestal.http - {:line 78, :msg "GET /hello-world"}
+19:42:48.555 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @12613ms
+19:42:54.447 [nREPL-worker-0] INFO  org.eclipse.jetty.server.Server - jetty-9.3.1.v20150714
+19:42:54.501 [nREPL-worker-0] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2773621a{/,null,AVAILABLE}
+19:42:54.533 [nREPL-worker-0] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@153911d{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+19:42:54.534 [nREPL-worker-0] INFO  org.eclipse.jetty.server.Server - Started @18595ms
+19:43:41.930 [nREPL-worker-0] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@153911d{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+19:43:41.932 [nREPL-worker-0] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@2773621a{/,null,UNAVAILABLE}
+19:44:13.697 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @12506ms
+19:44:19.702 [nREPL-worker-0] INFO  org.eclipse.jetty.server.Server - jetty-9.3.1.v20150714
+19:44:19.747 [nREPL-worker-0] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@25557050{/,null,AVAILABLE}
+19:44:19.774 [nREPL-worker-0] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@6458359c{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+19:44:19.774 [nREPL-worker-0] INFO  org.eclipse.jetty.server.Server - Started @18587ms
+19:46:47.124 [nREPL-worker-0] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@6458359c{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+19:46:47.126 [nREPL-worker-0] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@25557050{/,null,UNAVAILABLE}
+20:31:02.877 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @12118ms
+20:31:44.549 [nREPL-worker-1] INFO  org.eclipse.jetty.server.Server - jetty-9.3.1.v20150714
+20:31:44.583 [nREPL-worker-1] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@64ed709{/,null,AVAILABLE}
+20:31:44.607 [nREPL-worker-1] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@e592bfa{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+20:31:44.607 [nREPL-worker-1] INFO  org.eclipse.jetty.server.Server - Started @53850ms
+20:33:10.112 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @11865ms
+20:34:07.082 [nREPL-worker-1] INFO  org.eclipse.jetty.server.Server - jetty-9.3.1.v20150714
+20:34:07.113 [nREPL-worker-1] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1b08069f{/,null,AVAILABLE}
+20:34:07.135 [nREPL-worker-1] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@7c95c26b{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+20:34:07.136 [nREPL-worker-1] INFO  org.eclipse.jetty.server.Server - Started @68893ms
+20:35:05.633 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @13132ms
+20:35:11.275 [nREPL-worker-0] INFO  org.eclipse.jetty.server.Server - jetty-9.3.1.v20150714
+20:35:11.317 [nREPL-worker-0] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1e7decb5{/,null,AVAILABLE}
+20:35:11.341 [nREPL-worker-0] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@7a77757c{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+20:35:11.342 [nREPL-worker-0] INFO  org.eclipse.jetty.server.Server - Started @18845ms
+20:36:12.142 [qtp1154301609-25] INFO  io.pedestal.http - {:line 78, :msg "GET /favicon.ico"}
+20:36:13.660 [qtp1154301609-26] INFO  io.pedestal.http - {:line 78, :msg "GET /"}
+20:36:14.547 [qtp1154301609-26] INFO  datomic.process-monitor - {:event :metrics/initializing, :metricsCallback clojure.core/identity, :phase :begin, :pid 2616, :tid 26}
+20:36:14.549 [qtp1154301609-26] INFO  datomic.process-monitor - {:event :metrics/initializing, :metricsCallback clojure.core/identity, :msec 0.573, :phase :end, :pid 2616, :tid 26}
+20:36:14.549 [qtp1154301609-26] INFO  datomic.process-monitor - {:metrics/started clojure.core/identity, :pid 2616, :tid 26}
+20:36:14.552 [clojure-agent-send-off-pool-2] INFO  datomic.process-monitor - {:AvailableMB 1260.0, :event :metrics, :pid 2616, :tid 13}
+20:36:14.554 [clojure-agent-send-off-pool-2] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :phase :begin, :pid 2616, :tid 13}
+20:36:14.568 [clojure-agent-send-off-pool-2] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :msec 12.7, :phase :end, :pid 2616, :tid 13}
+20:36:14.570 [qtp1154301609-26] INFO  datomic.domain - {:event :cache/create, :cache-bytes 954466304, :pid 2616, :tid 26}
+20:36:14.580 [qtp1154301609-26] INFO  datomic.peer - {:event :peer/connect-transactor, :host "localhost", :alt-host nil, :port 4334, :version "0.9.5327", :pid 2616, :tid 26}
+20:36:14.608 [clojure-agent-send-off-pool-2] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :phase :begin, :pid 2616, :tid 13}
+20:36:14.612 [clojure-agent-send-off-pool-2] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :msec 3.24, :phase :end, :pid 2616, :tid 13}
+20:36:14.737 [clojure-agent-send-off-pool-2] INFO  datomic.log - {:event :log/load-segments, :count 0, :pid 2616, :tid 13}
+20:36:14.740 [qtp1154301609-26] INFO  datomic.log - {:event :log/catchup-fulltext, :phase :begin, :pid 2616, :tid 26}
+20:36:14.953 [qtp1154301609-26] INFO  datomic.log - {:event :log/catchup-fulltext, :msec 213.0, :phase :end, :pid 2616, :tid 26}
+20:36:14.954 [qtp1154301609-26] INFO  datomic.log - {:event :log/catchup, :bytes 1372, :tail-t 1001, :index-t 63, :msec 14, :pid 2616, :tid 26}
+20:36:14.974 [clojure-agent-send-off-pool-2] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :phase :begin, :pid 2616, :tid 13}
+20:36:14.978 [clojure-agent-send-off-pool-2] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :msec 4.02, :phase :end, :pid 2616, :tid 13}
+20:36:14.996 [qtp1154301609-26] INFO  datomic.log - {:event :log/catchup-fulltext, :phase :begin, :pid 2616, :tid 26}
+20:36:14.997 [qtp1154301609-26] INFO  datomic.log - {:event :log/catchup-fulltext, :msec 0.152, :phase :end, :pid 2616, :tid 26}
+20:36:14.997 [qtp1154301609-26] INFO  datomic.log - {:event :log/catchup, :bytes 0, :tail-t 1001, :index-t 1001, :msec 0, :pid 2616, :tid 26}
+20:36:15.010 [qtp1154301609-26] INFO  datomic.peer - {:event :peer/cache-connection, :dbid "helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :pid 2616, :tid 26}
+20:37:14.557 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:tid 39, :AvailableMB 1210.0, :StorageGetMsec {:lo 0, :hi 6, :sum 22, :count 21}, :pid 2616, :event :metrics, :ObjectCache {:lo 0, :hi 1, :sum 38, :count 63}, :LogIngestMsec {:lo 0, :hi 14, :sum 14, :count 2}, :MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :DbAddFulltextMsec {:lo 0, :hi 212, :sum 212, :count 2}, :PodGetMsec {:lo 3, :hi 12, :sum 19, :count 3}, :LogIngestBytes {:lo 0, :hi 1372, :sum 1372, :count 2}, :StorageGetBytes {:lo 31, :hi 2911, :sum 7837, :count 21}}
+20:38:14.561 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1210.0, :event :metrics, :pid 2616, :tid 39}
+20:39:14.569 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1210.0, :event :metrics, :pid 2616, :tid 39}
+20:40:14.573 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1210.0, :event :metrics, :pid 2616, :tid 39}
+20:41:14.579 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1210.0, :event :metrics, :pid 2616, :tid 39}
+20:42:14.583 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1210.0, :event :metrics, :pid 2616, :tid 39}
+20:43:14.587 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1210.0, :event :metrics, :pid 2616, :tid 39}
+20:44:14.590 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1210.0, :event :metrics, :pid 2616, :tid 39}
+20:45:14.597 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1210.0, :event :metrics, :pid 2616, :tid 39}
+20:46:14.604 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1210.0, :event :metrics, :pid 2616, :tid 39}
+20:46:17.526 [nREPL-worker-0] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@7a77757c{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+20:46:17.527 [nREPL-worker-0] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1e7decb5{/,null,UNAVAILABLE}
+20:46:47.802 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @11932ms
+20:47:41.285 [nREPL-worker-1] INFO  org.eclipse.jetty.server.Server - jetty-9.3.1.v20150714
+20:47:41.319 [nREPL-worker-1] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5b7c4a8{/,null,AVAILABLE}
+20:47:41.342 [nREPL-worker-1] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@70780c8d{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+20:47:41.344 [nREPL-worker-1] INFO  org.eclipse.jetty.server.Server - Started @65478ms
+20:47:55.311 [qtp613786449-26] INFO  io.pedestal.http - {:line 78, :msg "GET /"}
+20:47:59.330 [qtp613786449-27] INFO  io.pedestal.http - {:line 78, :msg "GET /hello-world"}
+20:48:35.668 [nREPL-worker-1] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@70780c8d{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+20:48:35.670 [nREPL-worker-1] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5b7c4a8{/,null,UNAVAILABLE}
+20:51:51.450 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @11772ms
+20:52:09.657 [nREPL-worker-0] INFO  org.eclipse.jetty.server.Server - jetty-9.3.1.v20150714
+20:52:09.694 [nREPL-worker-0] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@9dd749b{/,null,AVAILABLE}
+20:52:09.719 [nREPL-worker-0] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@5322cd3{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+20:52:09.720 [nREPL-worker-0] INFO  org.eclipse.jetty.server.Server - Started @30046ms
+20:52:22.807 [qtp613786449-24] INFO  io.pedestal.http - {:line 78, :msg "GET /hello-world"}
+20:52:27.160 [qtp613786449-25] INFO  io.pedestal.http - {:line 78, :msg "GET /"}
+20:52:27.820 [qtp613786449-25] INFO  datomic.process-monitor - {:event :metrics/initializing, :metricsCallback clojure.core/identity, :phase :begin, :pid 2814, :tid 25}
+20:52:27.822 [qtp613786449-25] INFO  datomic.process-monitor - {:event :metrics/initializing, :metricsCallback clojure.core/identity, :msec 0.85, :phase :end, :pid 2814, :tid 25}
+20:52:27.823 [qtp613786449-25] INFO  datomic.process-monitor - {:metrics/started clojure.core/identity, :pid 2814, :tid 25}
+20:52:27.828 [clojure-agent-send-off-pool-2] INFO  datomic.process-monitor - {:AvailableMB 1260.0, :event :metrics, :pid 2814, :tid 13}
+20:52:27.833 [clojure-agent-send-off-pool-2] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :phase :begin, :pid 2814, :tid 13}
+20:52:27.838 [clojure-agent-send-off-pool-2] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :msec 4.83, :phase :end, :pid 2814, :tid 13}
+20:52:27.840 [qtp613786449-25] INFO  datomic.domain - {:event :cache/create, :cache-bytes 954466304, :pid 2814, :tid 25}
+20:52:27.852 [qtp613786449-25] INFO  datomic.peer - {:event :peer/connect-transactor, :host "localhost", :alt-host nil, :port 4334, :version "0.9.5327", :pid 2814, :tid 25}
+20:52:27.883 [clojure-agent-send-off-pool-2] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :phase :begin, :pid 2814, :tid 13}
+20:52:27.886 [clojure-agent-send-off-pool-2] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :msec 2.77, :phase :end, :pid 2814, :tid 13}
+20:52:28.016 [clojure-agent-send-off-pool-2] INFO  datomic.log - {:event :log/load-segments, :count 0, :pid 2814, :tid 13}
+20:52:28.021 [qtp613786449-25] INFO  datomic.log - {:event :log/catchup-fulltext, :phase :begin, :pid 2814, :tid 25}
+20:52:28.153 [qtp613786449-25] INFO  datomic.log - {:event :log/catchup-fulltext, :msec 132.0, :phase :end, :pid 2814, :tid 25}
+20:52:28.154 [qtp613786449-25] INFO  datomic.log - {:event :log/catchup, :bytes 1372, :tail-t 1001, :index-t 63, :msec 18, :pid 2814, :tid 25}
+20:52:28.169 [clojure-agent-send-off-pool-2] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :phase :begin, :pid 2814, :tid 13}
+20:52:28.172 [clojure-agent-send-off-pool-2] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :msec 2.46, :phase :end, :pid 2814, :tid 13}
+20:52:28.187 [qtp613786449-25] INFO  datomic.log - {:event :log/catchup-fulltext, :phase :begin, :pid 2814, :tid 25}
+20:52:28.187 [qtp613786449-25] INFO  datomic.log - {:event :log/catchup-fulltext, :msec 0.212, :phase :end, :pid 2814, :tid 25}
+20:52:28.187 [qtp613786449-25] INFO  datomic.log - {:event :log/catchup, :bytes 0, :tail-t 1001, :index-t 1001, :msec 1, :pid 2814, :tid 25}
+20:52:28.209 [qtp613786449-25] INFO  datomic.peer - {:event :peer/cache-connection, :dbid "helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :pid 2814, :tid 25}
+20:53:27.838 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:tid 38, :AvailableMB 1200.0, :StorageGetMsec {:lo 0, :hi 3, :sum 13, :count 22}, :pid 2814, :event :metrics, :ObjectCache {:lo 0, :hi 1, :sum 37, :count 64}, :LogIngestMsec {:lo 1, :hi 18, :sum 19, :count 2}, :MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :DbAddFulltextMsec {:lo 0, :hi 131, :sum 131, :count 2}, :PodGetMsec {:lo 2, :hi 4, :sum 8, :count 3}, :LogIngestBytes {:lo 0, :hi 1372, :sum 1372, :count 2}, :StorageGetBytes {:lo 31, :hi 2911, :sum 7902, :count 22}}
+20:54:27.841 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1190.0, :event :metrics, :pid 2814, :tid 38}
+20:55:27.844 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1190.0, :event :metrics, :pid 2814, :tid 38}
+20:55:33.425 [qtp613786449-26] INFO  io.pedestal.http - {:line 78, :msg "GET /"}
+20:55:33.467 [clojure-agent-send-off-pool-6] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :phase :begin, :pid 2814, :tid 49}
+20:55:33.470 [clojure-agent-send-off-pool-6] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :msec 1.96, :phase :end, :pid 2814, :tid 49}
+20:56:27.850 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :PodGetMsec {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1190.0, :event :metrics, :pid 2814, :tid 38}
+20:57:27.854 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+20:58:27.862 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+20:59:27.870 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:00:27.873 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:01:27.880 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:02:27.893 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:03:27.898 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:04:27.903 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:05:27.907 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:06:27.914 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:07:27.920 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:08:27.927 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:09:27.933 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:10:27.940 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:11:27.947 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:12:27.951 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:13:27.954 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:14:27.957 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:15:27.961 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:16:27.966 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:17:27.974 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:18:27.979 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:19:27.986 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1180.0, :event :metrics, :pid 2814, :tid 38}
+21:49:40.314 [Thread-3 (HornetQ-client-global-threads-1773334659)] INFO  datomic.peer - {:event :peer/transactor-connection-failed, :pid 2814, :tid 56}
+org.hornetq.api.core.HornetQNotConnectedException: HQ119006: Channel disconnected
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.connectionDestroyed(ClientSessionFactoryImpl.java:425) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at org.hornetq.core.remoting.impl.netty.NettyConnector$Listener$1.run(NettyConnector.java:911) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at org.hornetq.utils.OrderedExecutorFactory$OrderedExecutor$1.run(OrderedExecutorFactory.java:105) [hornetq-core-client-2.3.17.Final.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_40]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_40]
+21:49:40.321 [clojure-agent-send-off-pool-8] INFO  datomic.peer - {:event :peer/connect-transactor, :host "localhost", :alt-host nil, :port 4334, :version "0.9.5327", :pid 2814, :tid 58}
+21:49:40.325 [clojure-agent-send-off-pool-8] INFO  datomic.common - {:event :common/retry, :backoff 1000, :attempts 1, :max-retries 9223372036854775807, :pid 2814, :tid 58}
+clojure.lang.ExceptionInfo: Error communicating with HOST localhost on PORT 4334
+	at clojure.core$ex_info.invoke(core.clj:4593) ~[clojure-1.7.0.jar:na]
+	at datomic.connector$endpoint_error.invoke(connector.clj:52) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.connector.TransactorHornetConnector$fn__8522.invoke(connector.clj:238) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.connector.TransactorHornetConnector.admin_request_STAR_(connector.clj:226) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.peer.Connection$fn__8822.invoke(peer.clj:238) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.peer.Connection.create_connection_state(peer.clj:222) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.peer$create_connection$reconnect_fn__8883.invoke(peer.clj:488) ~[datomic-pro-0.9.5327.jar:na]
+	at clojure.core$partial$fn__4527.invoke(core.clj:2492) ~[clojure-1.7.0.jar:na]
+	at datomic.common$retry_fn$fn__253.invoke(common.clj:461) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.common$retry_fn.doInvoke(common.clj:461) ~[datomic-pro-0.9.5327.jar:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:713) [clojure-1.7.0.jar:na]
+	at datomic.peer$create_connection$fn__8885.invoke(peer.clj:492) [datomic-pro-0.9.5327.jar:na]
+	at datomic.reconnector2.Reconnector$fn__8236.invoke(reconnector2.clj:57) [datomic-pro-0.9.5327.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4444.invoke(core.clj:1916) [clojure-1.7.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.7.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_40]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_40]
+Caused by: org.hornetq.api.core.HornetQInternalErrorException: HQ119001: Failed to create session
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSessionInternal(ClientSessionFactoryImpl.java:962) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSessionInternal(ClientSessionFactoryImpl.java:787) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSession(ClientSessionFactoryImpl.java:324) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at datomic.hornet.SessionFactoryBundle.start_session_STAR_(hornet.clj:193) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.hornet$start_session.doInvoke(hornet.clj:165) ~[datomic-pro-0.9.5327.jar:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:464) [clojure-1.7.0.jar:na]
+	at datomic.connector.TransactorHornetConnector$fn__8522.invoke(connector.clj:228) ~[datomic-pro-0.9.5327.jar:na]
+	... 16 common frames omitted
+Caused by: java.lang.IllegalStateException: Connection is null
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSessionInternal(ClientSessionFactoryImpl.java:836) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	... 22 common frames omitted
+21:49:40.326 [clojure-agent-send-off-pool-8] WARN  datomic.common - ... caused by ...
+org.hornetq.api.core.HornetQInternalErrorException: HQ119001: Failed to create session
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSessionInternal(ClientSessionFactoryImpl.java:962) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSessionInternal(ClientSessionFactoryImpl.java:787) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSession(ClientSessionFactoryImpl.java:324) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at datomic.hornet.SessionFactoryBundle.start_session_STAR_(hornet.clj:193) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.hornet$start_session.doInvoke(hornet.clj:165) ~[datomic-pro-0.9.5327.jar:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:464) [clojure-1.7.0.jar:na]
+	at datomic.connector.TransactorHornetConnector$fn__8522.invoke(connector.clj:228) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.connector.TransactorHornetConnector.admin_request_STAR_(connector.clj:226) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.peer.Connection$fn__8822.invoke(peer.clj:238) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.peer.Connection.create_connection_state(peer.clj:222) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.peer$create_connection$reconnect_fn__8883.invoke(peer.clj:488) ~[datomic-pro-0.9.5327.jar:na]
+	at clojure.core$partial$fn__4527.invoke(core.clj:2492) ~[clojure-1.7.0.jar:na]
+	at datomic.common$retry_fn$fn__253.invoke(common.clj:461) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.common$retry_fn.doInvoke(common.clj:461) ~[datomic-pro-0.9.5327.jar:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:713) [clojure-1.7.0.jar:na]
+	at datomic.peer$create_connection$fn__8885.invoke(peer.clj:492) [datomic-pro-0.9.5327.jar:na]
+	at datomic.reconnector2.Reconnector$fn__8236.invoke(reconnector2.clj:57) [datomic-pro-0.9.5327.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4444.invoke(core.clj:1916) [clojure-1.7.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.7.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_40]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_40]
+Caused by: java.lang.IllegalStateException: Connection is null
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSessionInternal(ClientSessionFactoryImpl.java:836) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	... 22 common frames omitted
+21:49:40.327 [clojure-agent-send-off-pool-8] WARN  datomic.common - ... caused by ...
+java.lang.IllegalStateException: Connection is null
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSessionInternal(ClientSessionFactoryImpl.java:836) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSessionInternal(ClientSessionFactoryImpl.java:787) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at org.hornetq.core.client.impl.ClientSessionFactoryImpl.createSession(ClientSessionFactoryImpl.java:324) ~[hornetq-core-client-2.3.17.Final.jar:na]
+	at datomic.hornet.SessionFactoryBundle.start_session_STAR_(hornet.clj:193) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.hornet$start_session.doInvoke(hornet.clj:165) ~[datomic-pro-0.9.5327.jar:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:464) [clojure-1.7.0.jar:na]
+	at datomic.connector.TransactorHornetConnector$fn__8522.invoke(connector.clj:228) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.connector.TransactorHornetConnector.admin_request_STAR_(connector.clj:226) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.peer.Connection$fn__8822.invoke(peer.clj:238) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.peer.Connection.create_connection_state(peer.clj:222) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.peer$create_connection$reconnect_fn__8883.invoke(peer.clj:488) ~[datomic-pro-0.9.5327.jar:na]
+	at clojure.core$partial$fn__4527.invoke(core.clj:2492) ~[clojure-1.7.0.jar:na]
+	at datomic.common$retry_fn$fn__253.invoke(common.clj:461) ~[datomic-pro-0.9.5327.jar:na]
+	at datomic.common$retry_fn.doInvoke(common.clj:461) ~[datomic-pro-0.9.5327.jar:na]
+	at clojure.lang.RestFn.invoke(RestFn.java:713) [clojure-1.7.0.jar:na]
+	at datomic.peer$create_connection$fn__8885.invoke(peer.clj:492) [datomic-pro-0.9.5327.jar:na]
+	at datomic.reconnector2.Reconnector$fn__8236.invoke(reconnector2.clj:57) [datomic-pro-0.9.5327.jar:na]
+	at clojure.core$binding_conveyor_fn$fn__4444.invoke(core.clj:1916) [clojure-1.7.0.jar:na]
+	at clojure.lang.AFn.call(AFn.java:18) [clojure-1.7.0.jar:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_40]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_40]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_40]
+21:49:41.333 [clojure-agent-send-off-pool-8] INFO  datomic.common - {:event :common/retry, :backoff 1000, :attempts 2, :max-retries 9223372036854775807, :result {:old-endpoint {:host "localhost", :port 4334, :timestamp 1449152396664}}, :pid 2814, :tid 58}
+21:49:42.339 [clojure-agent-send-off-pool-8] INFO  datomic.common - {:event :common/retry, :backoff 1000, :attempts 3, :max-retries 9223372036854775807, :result {:old-endpoint {:host "localhost", :port 4334, :timestamp 1449152396664}}, :pid 2814, :tid 58}
+21:49:43.344 [clojure-agent-send-off-pool-8] INFO  datomic.peer - {:event :peer/connect-transactor, :host "localhost", :alt-host nil, :port 4334, :version "0.9.5327", :pid 2814, :tid 58}
+21:49:43.454 [clojure-agent-send-off-pool-9] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :phase :begin, :pid 2814, :tid 59}
+21:49:43.457 [clojure-agent-send-off-pool-9] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :msec 2.29, :phase :end, :pid 2814, :tid 59}
+21:49:43.468 [clojure-agent-send-off-pool-8] INFO  datomic.log - {:event :log/catchup-fulltext, :phase :begin, :pid 2814, :tid 58}
+21:49:43.468 [clojure-agent-send-off-pool-8] INFO  datomic.log - {:event :log/catchup-fulltext, :msec 0.112, :phase :end, :pid 2814, :tid 58}
+21:49:43.468 [clojure-agent-send-off-pool-8] INFO  datomic.log - {:event :log/catchup, :bytes 0, :tail-t 1001, :index-t 1001, :msec 0, :pid 2814, :tid 58}
+21:49:43.476 [clojure-agent-send-off-pool-9] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :phase :begin, :pid 2814, :tid 59}
+21:49:43.479 [clojure-agent-send-off-pool-9] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/helloworld-1b4016e7-d01a-4318-8fe0-bd6a119f5b02", :msec 2.83, :phase :end, :pid 2814, :tid 59}
+21:49:43.490 [clojure-agent-send-off-pool-8] INFO  datomic.log - {:event :log/catchup-fulltext, :phase :begin, :pid 2814, :tid 58}
+21:49:43.490 [clojure-agent-send-off-pool-8] INFO  datomic.log - {:event :log/catchup-fulltext, :msec 0.0952, :phase :end, :pid 2814, :tid 58}
+21:49:43.490 [clojure-agent-send-off-pool-8] INFO  datomic.log - {:event :log/catchup, :bytes 0, :tail-t 1001, :index-t 1001, :msec 0, :pid 2814, :tid 58}
+21:50:09.421 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:tid 38, :AvailableMB 1160.0, :pid 2814, :event :metrics, :ObjectCache {:lo 1, :hi 1, :sum 50, :count 50}, :LogIngestMsec {:lo 0, :hi 0, :sum 0, :count 2}, :MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :DbAddFulltextMsec {:lo 0, :hi 0, :sum 0, :count 2}, :PodGetMsec {:lo 2, :hi 2, :sum 4, :count 2}, :LogIngestBytes {:lo 0, :hi 0, :sum 0, :count 2}}
+21:51:09.428 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+21:52:09.433 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+21:53:09.438 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+21:54:09.445 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+21:55:09.453 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+21:56:09.456 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+21:57:09.462 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+21:58:09.470 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+21:59:09.476 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:00:09.484 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:01:09.491 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:02:09.498 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:03:09.503 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:04:09.509 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:05:09.512 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:06:09.517 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:07:09.519 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:08:09.526 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:09:09.532 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:10:09.535 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:11:09.542 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:12:09.545 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:13:09.552 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:14:09.556 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:15:09.564 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:16:09.566 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:17:09.570 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:18:09.575 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:19:09.579 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1160.0, :event :metrics, :pid 2814, :tid 38}
+22:20:09.582 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:21:09.586 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:22:09.593 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:23:09.598 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:24:09.601 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:25:09.609 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:26:09.612 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:27:09.617 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:28:09.623 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:29:09.628 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:30:09.631 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:31:09.637 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:32:09.642 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:33:09.649 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:34:09.652 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:35:09.658 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:36:09.663 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:37:09.670 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:38:09.673 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:39:09.676 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:40:09.679 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:41:09.681 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:42:09.687 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1150.0, :event :metrics, :pid 2814, :tid 38}
+22:43:09.694 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+22:44:09.700 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+22:45:09.704 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+22:46:09.706 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+22:47:09.710 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+22:48:09.717 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+22:49:09.724 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+22:50:09.726 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+22:51:09.733 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+22:52:09.738 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+22:53:09.740 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+22:54:09.747 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+22:55:09.754 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+22:56:09.757 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+22:57:09.760 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+22:58:09.763 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+22:59:09.768 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+23:00:09.774 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+23:01:09.781 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+23:02:09.788 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+23:03:09.795 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+23:04:09.799 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+23:05:09.803 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+23:06:09.808 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+23:07:09.815 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+23:08:09.822 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+23:09:09.825 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+23:10:09.833 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+23:11:09.839 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+23:12:09.846 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+23:13:09.848 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+23:14:09.853 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+23:15:09.857 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+23:16:09.860 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+23:17:09.865 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1140.0, :event :metrics, :pid 2814, :tid 38}
+23:18:09.872 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1130.0, :event :metrics, :pid 2814, :tid 38}
+23:19:09.880 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1130.0, :event :metrics, :pid 2814, :tid 38}
+23:20:09.884 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1130.0, :event :metrics, :pid 2814, :tid 38}
+23:21:09.892 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1130.0, :event :metrics, :pid 2814, :tid 38}
+23:22:09.896 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1130.0, :event :metrics, :pid 2814, :tid 38}
+23:23:09.899 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1130.0, :event :metrics, :pid 2814, :tid 38}
+23:24:09.904 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1130.0, :event :metrics, :pid 2814, :tid 38}
+23:25:09.906 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1130.0, :event :metrics, :pid 2814, :tid 38}
+23:26:09.911 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1120.0, :event :metrics, :pid 2814, :tid 38}
+23:27:09.918 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1120.0, :event :metrics, :pid 2814, :tid 38}
+23:28:09.922 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1120.0, :event :metrics, :pid 2814, :tid 38}
+23:29:09.930 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1120.0, :event :metrics, :pid 2814, :tid 38}
+23:30:09.934 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1120.0, :event :metrics, :pid 2814, :tid 38}
+23:31:09.940 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1120.0, :event :metrics, :pid 2814, :tid 38}
+23:32:09.946 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1120.0, :event :metrics, :pid 2814, :tid 38}
+23:33:09.954 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1120.0, :event :metrics, :pid 2814, :tid 38}
+23:34:09.960 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1120.0, :event :metrics, :pid 2814, :tid 38}
+23:35:09.965 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1120.0, :event :metrics, :pid 2814, :tid 38}
+23:36:09.971 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1120.0, :event :metrics, :pid 2814, :tid 38}
+23:37:09.976 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1120.0, :event :metrics, :pid 2814, :tid 38}
+23:38:09.980 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1120.0, :event :metrics, :pid 2814, :tid 38}
+23:39:09.987 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1120.0, :event :metrics, :pid 2814, :tid 38}
+23:40:09.992 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1120.0, :event :metrics, :pid 2814, :tid 38}
+23:41:10.000 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1120.0, :event :metrics, :pid 2814, :tid 38}
+23:42:10.006 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1110.0, :event :metrics, :pid 2814, :tid 38}
+23:43:10.010 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1110.0, :event :metrics, :pid 2814, :tid 38}
+23:44:10.017 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1110.0, :event :metrics, :pid 2814, :tid 38}
+23:45:10.021 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1110.0, :event :metrics, :pid 2814, :tid 38}
+23:46:10.028 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1110.0, :event :metrics, :pid 2814, :tid 38}
+23:47:10.033 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1110.0, :event :metrics, :pid 2814, :tid 38}
+23:48:10.036 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1110.0, :event :metrics, :pid 2814, :tid 38}
+23:49:10.040 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1110.0, :event :metrics, :pid 2814, :tid 38}
+23:50:10.047 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1100.0, :event :metrics, :pid 2814, :tid 38}
+23:51:10.051 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1100.0, :event :metrics, :pid 2814, :tid 38}
+23:52:10.058 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1100.0, :event :metrics, :pid 2814, :tid 38}
+23:53:10.072 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1090.0, :event :metrics, :pid 2814, :tid 38}
+23:54:10.070 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1090.0, :event :metrics, :pid 2814, :tid 38}
+23:55:10.076 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1090.0, :event :metrics, :pid 2814, :tid 38}
+23:56:10.082 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1090.0, :event :metrics, :pid 2814, :tid 38}
+23:57:10.087 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1090.0, :event :metrics, :pid 2814, :tid 38}
+23:58:10.093 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1090.0, :event :metrics, :pid 2814, :tid 38}
+23:59:10.101 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 1090.0, :event :metrics, :pid 2814, :tid 38}
