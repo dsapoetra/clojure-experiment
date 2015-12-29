@@ -1,0 +1,79 @@
+(require ['oauth.client :as 'oauth])
+(def consumer (oauth/make-consumer "F7dmOwUeT5WGP5zpkW3dM3pGv"
+                                       "PaJ2cTZt4uGZZrHjzE4g9UWKRHptaBtQy6lEtf3ZsMY4e0K2Ru"
+                                       "https://api.twitter.com/oauth/request_token"
+                                       "https://api.twitter.com/oauth/access_token"
+                                       "https://api.twitter.com/oauth/authorize"
+                                       :hmac-sha1))
+consumer
+(clojure.pprint/pprint consumer)
+(def request-token (oauth/request-token consumer http://localhost:8080))
+(def request-token (oauth/request-token consumer "http://localhost:8080"))
+(clojure.pprint/pprint request-token)
+ (oauth/user-approval-uri consumer 
+                             (:oauth_token request-token))
+(def access-token-response (oauth/access-token consumer 
+                                                   request-token
+                                                   ))
+(def credentials (oauth/credentials consumer
+                                        (:oauth_token access-token-response)
+                                        (:oauth_token_secret access-token-response)
+                                        :POST
+                                        "http://api.twitter.com/1.1/statuses/update.json"
+                                        {:status "posting from #clojure with #oauth"}))
+ (http/post "http://api.twitter.com/1.1/statuses/update.json" 
+               {:query-params credentials})
+(require '[clj-http.client :as http])
+ (http/post "http://api.twitter.com/1.1/statuses/update.json" 
+               {:query-params credentials})
+(require 'twitter)
+(clojure.pprint/pprint credentials)
+(clojure.pprint/pprint access-token-response)
+(clojure.pprint/pprint (def access-token-response (oauth/access-token consumer )
+                                                   request-token
+                                                   ))
+(clojure.pprint.pprint (oauth/access-token consumer )
+                                                   request-token
+                                                   )
+(clojure.pprint/pprint (oauth/access-token consumer 
+                                                   request-token
+                                                   ))
+(server/start runnable-service)
+(ns tweet_oauth.auth)
+(load "auth")
+ (def consumer (oauth/make-consumer     "F7dmOwUeT5WGP5zpkW3dM3pGv"
+                                        "PaJ2cTZt4uGZZrHjzE4g9UWKRHptaBtQy6lEtf3ZsMY4e0K2Ru"
+                                        "https://api.twitter.com/oauth/request_token"
+                                        "https://api.twitter.com/oauth/access_token"
+                                        "https://api.twitter.com/oauth/authorize"
+                                        :hmac-sha1))
+(clojure.pprint/pprint consumer)
+(def request-token (oauth/request-token consumer "http://localhost:8080"))
+(clojure.pprint/pprint request-token)
+(ns tweet_oauth.auth)
+(load "auth")
+(def consumer (oauth/make-consumer     "F7dmOwUeT5WGP5zpkW3dM3pGv"
+                                        "PaJ2cTZt4uGZZrHjzE4g9UWKRHptaBtQy6lEtf3ZsMY4e0K2Ru"
+                                        "https://api.twitter.com/oauth/request_token"
+                                        "https://api.twitter.com/oauth/access_token"
+                                        "https://api.twitter.com/oauth/authorize"
+                                        :hmac-sha1))
+(def request-token (oauth/request-token consumer "http://localhost:8080"))
+(clojure.pprint/pprint request-token)
+(def uri (oauth/user-approval-uri consumer
+                                   (:oauth_token request-token)))
+uri
+(clojure.pprint/pprint request-token)
+(def request-token (oauth/request-token consumer "http://localhost:8080"))
+(clojure.pprint/pprint request-token)
+uri
+ (def uri (oauth/user-approval-uri consumer
+                                   (:oauth_token request-token)))
+uri
+(def request-token (oauth/request-token consumer "http://localhost:8080"))
+(def uri (oauth/user-approval-uri consumer
+              #_=>                                    (:oauth_token request-token)))
+uri
+(server/start runnable-service)
+(tweet_oauth.auth/uri)
+(server/start runnable-service)
